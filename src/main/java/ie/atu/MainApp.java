@@ -13,10 +13,15 @@ public class MainApp {
         System.out.println("Please enter your second number: ");
         int secondNum = scan.nextInt();
 
+        //Addition of two numbers
         Calculator calc = new Calculator();
         calc.add(firstNum, secondNum);
         int result = calc.add(firstNum, secondNum);
-        System.out.println("The result is: " + result);
+        System.out.println("The Addition is: " + result);
 
+        //subtraction of two numbers
+        calc.sub(firstNum, secondNum);
+        int resultSub = calc.sub(firstNum, secondNum);
+        System.out.println("The Subtraction is: " + resultSub);
     }
 }
