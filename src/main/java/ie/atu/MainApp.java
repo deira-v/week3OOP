@@ -24,9 +24,14 @@ public class MainApp {
         int resultSub = calc.sub(firstNum, secondNum);
         System.out.println("The Subtraction is: " + resultSub);
 
-        //Multipliction of two numbers
+        //Multiplication of two numbers
         calc.mul(firstNum, secondNum);
         int resultMul = calc.mul(firstNum, secondNum);
         System.out.println("the Multiplication is: " + resultMul);
+
+        //division of two numbers
+        calc.div(firstNum, secondNum);
+        float resultDiv = calc.div(firstNum, secondNum);
+        System.out.println("The Division is: " + resultDiv);
     }
 }
