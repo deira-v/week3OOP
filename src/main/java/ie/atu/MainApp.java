@@ -19,9 +19,14 @@ public class MainApp {
         int result = calc.add(firstNum, secondNum);
         System.out.println("The Addition is: " + result);
 
-        //subtraction of two numbers
+        //Subtraction of two numbers
         calc.sub(firstNum, secondNum);
         int resultSub = calc.sub(firstNum, secondNum);
         System.out.println("The Subtraction is: " + resultSub);
+
+        //Multipliction of two numbers
+        calc.mul(firstNum, secondNum);
+        int resultMul = calc.mul(firstNum, secondNum);
+        System.out.println("the Multiplication is: " + resultMul);
     }
 }
