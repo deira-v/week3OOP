@@ -15,17 +15,14 @@ public class MainApp {
 
         //Addition of two numbers
         Calculator calc = new Calculator();
-        calc.add(firstNum, secondNum);
         int result = calc.add(firstNum, secondNum);
         System.out.println("The Addition is: " + result);
 
         //Subtraction of two numbers
-        calc.sub(firstNum, secondNum);
         int resultSub = calc.sub(firstNum, secondNum);
         System.out.println("The Subtraction is: " + resultSub);
 
         //Multiplication of two numbers
-        calc.mul(firstNum, secondNum);
         int resultMul = calc.mul(firstNum, secondNum);
         System.out.println("the Multiplication is: " + resultMul);
 
@@ -33,11 +30,22 @@ public class MainApp {
         if(secondNum == 0)
         {
             System.out.println("Can not Divide by zero.");
-        }else {
-            calc.div(firstNum, secondNum);
+        }else
+        {
             float resultDiv = calc.div(firstNum, secondNum);
             System.out.println("The Division is: " + resultDiv);
         }
+
+        //remainder from division of two numbers
+        int restRemainder = calc.remain(firstNum, secondNum);
+        System.out.println("The Remainder of " + firstNum + " devided by " + secondNum + " is: " + restRemainder);
+
+        //Power of a base to an exponent
+        System.out.println("Please enter Base and Exponent: ");
+        int base = scan.nextInt();
+        int exponent = scan.nextInt();
+        int resultPow = calc.pow(base, exponent);
+        System.out.println(base + " to the power of " + exponent + " is: " + resultPow);
 
     }
 }
