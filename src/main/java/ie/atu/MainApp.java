@@ -30,8 +30,14 @@ public class MainApp {
         System.out.println("the Multiplication is: " + resultMul);
 
         //division of two numbers
-        calc.div(firstNum, secondNum);
-        float resultDiv = calc.div(firstNum, secondNum);
-        System.out.println("The Division is: " + resultDiv);
+        if(secondNum == 0)
+        {
+            System.out.println("Can not Divide by zero.");
+        }else {
+            calc.div(firstNum, secondNum);
+            float resultDiv = calc.div(firstNum, secondNum);
+            System.out.println("The Division is: " + resultDiv);
+        }
+
     }
 }
