@@ -23,11 +23,11 @@ public class Calculator {
         return firstNum / secondNum;
     }
 
-    public int pow(int base, int exponent)
+    public int pow(int firstNum, int secondNum)
     {
-        for (int i = 0; i < exponent; i++)
+        for (int i = 0; i < secondNum; i++)
         {
-            result *= base;
+            result *= firstNum;
         }
          return result;
     }
